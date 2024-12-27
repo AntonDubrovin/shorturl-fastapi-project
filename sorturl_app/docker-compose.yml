@@ -1,0 +1,11 @@
+services:
+  shorturl_service:
+    build: ./shorturl_service
+    ports:
+      - "8001:80"
+    volumes:
+      - shorturl_data:/app/data
+
+
+volumes:
+  shorturl_data:
